@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>For you — a letter</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body class="letter-page">
+  <main class="letter-center">
+    <div class="paper" role="article" aria-label="Birthday letter">
+      <div class="paper-inner">
+        <h2 class="letter-title">Happy Birthday —</h2>
+
+        <div id="letterText" class="letter-text">
+          Hey you,
+
+Happiest Birthday! 🎂💫
+
+On your special day, I just want to wish you all the love, laughter, and peace in the world 💖 You truly deserve every smile that life can give — may this year be filled with happiness, success, and moments that make your heart glow ✨
+
+And now, let me take you back a little… from where it all started 🕰
+
+It all began back in class 8, when I first saw you — that quiet, gorgeous girl with those beautiful dizzy eyes and that perfect smile 😊 Maybe that’s when my heart decided to stay with you — even before I realized it ❤
+
+Then came class 10, and that one moment I can never forget — my birthday. You were about to leave the class, and something inside me just wouldn’t let you go without doing something. I ran behind you, stopped you at the door, and handed you that chocolate 🍫 — not expecting anything, just wanting you to know… you mattered to me. You still do 🥹💞
+
+And then last year happened — when I finally told you everything I’d felt for years 💌 The bond we shared, the time we spent, the way we supported each other — so many moments that meant the world to me 💫 Wishing you the best year ahead, full of joy, laughs, and happiness 😄 — and I hope I’ll still be a small part of it 🤍
+
+I know things changed later — we had our ups and downs, words that hurt, and moments that faded 💔 But no matter how far things go, I never managed to stop caring. Somehow, I always find myself coming back — because my heart still belongs there… with you ❤
+
+Coming to the photo on the first page 📸 — it’s a reminder 😜 neku alane photo tiyadam radu ga, nerchuko ela teyalo! 😂
+
+So, today on your birthday, I just want you to remember —
+
+💫 I’m always here with you.
+💫 I’m not here to erase your past, but to face everything with you — your past, your pain, your stories, everything you’ve been through.
+💫 I’m here to help you heal, to make you smile, and to stand by you — always 🤍
+
+You’ve been my favorite person since then, and you always will be 💖 Happy Birthday once again, my KitKat 🍫🥳🎂💐 Cheers to another year full of smiles, peace, and love 🥂✨
+
+Stay the same — sweet, charming, and full of light 🌸
+
+— With love, always,
+Koushik 💫`;
+
+          
+        </div>
+        <div class="letter-controls">
+          <a href="index.html" class="small-link">Back to start</a>
+        </div>
+      </div>
+    </div>
+    <audio id="bgMusic" src="song.mp3" loop muted></audio>
+  </main>
+
+  <script>
+    // Small typing effect to make the letter feel gentle
+    (function typing(){
+      const el = document.getElementById('letterText');
+      const full = el.innerHTML;
+      el.innerHTML = '';
+      let i = 0;
+      const speed = 10; // lower is faster
+      function step(){
+        if(i < full.length){
+          el.innerHTML += full.charAt(i);
+          i++;
+          setTimeout(step, speed);
+        }
+      }
+      step();
+    })();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
