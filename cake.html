@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Birthday 🎂</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+
+<body class="cake-page">
+  <!-- Floating background goodies (hearts, chocolates, etc.) -->
+  <div id="floatContainer" class="float-container" aria-hidden="true"></div>
+
+  <main class="center-stage">
+    <section class="scene">
+      <!-- Top message above cake -->
+      <div class="message-top">Happy 20th Birthday 🎉</div>
+
+      <!-- Cake area -->
+      <div id="cakeWrap" class="cake-wrap" aria-live="polite">
+        <div class="cake">
+          <!-- Icing and layers -->
+          <div class="icing"></div>
+          <div class="layer layer1"></div>
+          <div class="layer layer2"></div>
+          <div class="cake-plate"></div>
+
+          <!-- Candles injected dynamically from script.js -->
+          <div id="candles" class="candles"></div>
+        </div>
+      </div>
+
+      <!-- Old bottom message box removed (each candle now shows its own) -->
+      <!-- <div id="candleMessage" class="candle-message">Tap the cake to light candles</div> -->
+
+      <!-- Button appears when all candles are lit -->
+      <button id="openLetterBtn" class="next-btn" hidden>Open the letter ✉️</button>
+    </section>
+  </main>
+
+  <!-- Main logic -->
+  <script src="script.js"></script>
+</body>
+</html>
